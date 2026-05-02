@@ -27,6 +27,7 @@ body {
 }
 
 .device--photo {
+  position: relative;
   width: min(420px, calc(100vw - 32px));
   height: auto;
   transition: transform 240ms ease;
@@ -34,4 +35,25 @@ body {
 
 .device--photo:hover {
   transform: translateY(-10px);
+}
+
+.device__frame,
+.device__screen {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.device__screen {
+  position: absolute;
+  top: 1.8%;
+  left: 5.8%;
+  width: 88.4%;
+  border-radius: 11%;
+  z-index: 1;
+}
+
+.device__frame {
+  position: relative;
+  z-index: 2;
 }
